@@ -1,0 +1,34 @@
+{
+  "$schema": "./tsconfig-schema.json",
+  "compilerOptions": {
+    "strict": true,
+    "strictNullChecks": false,
+    "allowJs": false,
+    "outDir": ".",
+    "baseUrl": "./",
+    "forceConsistentCasingInFileNames": true,
+    "target": "ESNext",
+    "lib": ["ESNext"],
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "paths": {
+      "@w3ts/*": ["packages/w3ts/*"],
+      "@zustand": ["packages/zustand"],
+      "@signals": ["packages/signals"]
+    },
+    "types": ["lua-types/5.3", "./types"]
+  },
+  "include": ["src", "packages/w3ts"],
+  "exclude": [],
+  "tstl": {
+    "buildMode": "default",
+    "luaTarget": "5.3",
+    "noHeader": true,
+    "luaLibImport": "require",
+    "luaBundle": "./dist/tstl_output.lua",
+    "luaBundleEntry": "./src/main.ts",
+    "noImplicitSelf": true,
+    "sourceMapTraceback": true,
+    "noResolvePaths": ["typescript", "typescript-to-lua"]
+  }
+}

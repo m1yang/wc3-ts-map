@@ -1,0 +1,7 @@
+{
+  "name": "demo",
+  "launcher": "C:/Users/60584/Workstation/KKWE插件/bin/YDWEConfig.exe",
+  "w2l": "C:/Users/60584/Workstation/KKWE插件/plugin/w3x2lni_zhCN_v2.7.3/w2l.exe",
+  "we": "C:/Users/60584/Workstation/KKWE插件/KKWE.exe",
+  "output": "./dist"
+}
